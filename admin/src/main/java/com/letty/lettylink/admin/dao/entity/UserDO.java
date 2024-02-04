@@ -3,6 +3,7 @@ package com.letty.lettylink.admin.dao.entity;
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.letty.lettylink.admin.common.database.BaseDO;
 import lombok.Data;
 
 import java.util.Date;
@@ -10,7 +11,7 @@ import java.util.Date;
 
 @Data
 @TableName("t_user")
-public class UserDO {
+public class UserDO extends BaseDO {
 
     private Long id;
 
@@ -23,6 +24,7 @@ public class UserDO {
      * password
      */
     private String password;
+
 
     /**
      * users official name
@@ -39,27 +41,10 @@ public class UserDO {
      */
     private String email;
 
+
     /**
      * time stamp deletion
      */
     private Long deletionTime;
-
-    /**
-     * created_time
-     */
-    @TableField(fill= FieldFill.INSERT)
-    private Date createdTime;
-
-    /**
-     * updated_time
-     */
-    @TableField(fill= FieldFill.INSERT_UPDATE)
-    private Date updatedTime;
-
-    /**
-     * deletion flag 0 or 1
-     */
-    @TableField(fill= FieldFill.INSERT)
-    private Integer delFlag;
 
 }

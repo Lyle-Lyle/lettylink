@@ -30,9 +30,29 @@ public class UserRespDTO {
     private String email;
 
     /**
+     * 用户头像
+     */
+    private String avatarUrl;
+
+    /**
+     * 状态 0 - 正常
+     */
+    private Integer userStatus;
+
+    /**
      * time stamp deletion
      */
     private Long deletionTime;
+
+    /**
+     * 用户角色 0 - 普通用户 1 - 管理员
+     */
+    private Integer userRole;
+
+    /**
+     * 标签 json 列表
+     */
+    private String tags;
 
     /**
      * created_time

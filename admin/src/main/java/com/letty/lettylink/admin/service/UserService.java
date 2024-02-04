@@ -8,6 +8,8 @@ import com.letty.lettylink.admin.dto.req.UserUpdateReqDTO;
 import com.letty.lettylink.admin.dto.resp.UserLoginRespDTO;
 import com.letty.lettylink.admin.dto.resp.UserRespDTO;
 
+import java.util.List;
+
 public interface UserService extends IService<UserDO> {
 
     UserRespDTO getUserByUsername(String username);
@@ -23,4 +25,6 @@ public interface UserService extends IService<UserDO> {
     Boolean checkLogin(String username, String token);
 
     void logout(String username, String token);
+
+
 }

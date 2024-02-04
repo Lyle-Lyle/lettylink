@@ -1,4 +1,4 @@
-package com.letty.lettylink.admin.test;
+package com.letty.lettylink.admin.service;
 
 public class UserTableShardingTest {
 
