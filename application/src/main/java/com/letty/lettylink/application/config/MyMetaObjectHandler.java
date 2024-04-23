@@ -11,14 +11,14 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
 
     @Override
     public void insertFill(MetaObject metaObject) {
-        strictInsertFill(metaObject, "createdTime", Date::new, Date.class);
-        strictInsertFill(metaObject, "updatedTime", Date::new, Date.class);
+        strictInsertFill(metaObject, "createTime", Date::new, Date.class);
+        strictInsertFill(metaObject, "updateTime", Date::new, Date.class);
         strictInsertFill(metaObject, "delFlag", () -> 0, Integer.class);
 
     }
 
     @Override
     public void updateFill(MetaObject metaObject) {
-        strictInsertFill(metaObject, "updatedTime", Date::new, Date.class);
+        strictInsertFill(metaObject, "updateTime", Date::new, Date.class);
     }
 }

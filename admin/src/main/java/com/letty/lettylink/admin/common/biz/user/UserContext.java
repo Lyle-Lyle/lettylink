@@ -6,6 +6,8 @@ import java.util.Optional;
 
 /**
  * 用户上下文
+ * 通过这个类就能拿到当前登录用户的信息
+ * 因为在 threadlocal中设置类用户信息
  */
 public final class UserContext {
 

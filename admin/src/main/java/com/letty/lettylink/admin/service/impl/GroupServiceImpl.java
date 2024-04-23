@@ -33,6 +33,7 @@ public class GroupServiceImpl extends ServiceImpl<GroupMapper, GroupDO> implemen
         GroupDO groupDO = GroupDO.builder()
                 .gid(gid)
                 .sortOrder(0)
+                // 不让用户传，接口有安全性问题
                 .username(UserContext.getUsername())
                 .name(groupName)
                 .build();

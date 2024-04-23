@@ -14,13 +14,13 @@ import java.util.Date;
 public class BaseDO {
 
     @TableField(fill= FieldFill.INSERT)
-    private Date createdTime;
+    private Date createTime;
 
     /**
      * updated_time
      */
     @TableField(fill= FieldFill.INSERT_UPDATE)
-    private Date updatedTime;
+    private Date updateTime;
 
     /**
      * deletion flag 0 or 1

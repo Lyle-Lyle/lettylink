@@ -3,12 +3,15 @@ package com.letty.lettylink.application.dao.entity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.letty.lettylink.application.common.database.BaseDO;
-import lombok.Data;
+import lombok.*;
 
 import java.util.Date;
 
 @Data
+@Builder
 @TableName("t_link")
+@NoArgsConstructor
+@AllArgsConstructor
 public class ShortLinkDO extends BaseDO {
     /**
      * ID
