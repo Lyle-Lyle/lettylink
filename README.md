@@ -2,102 +2,49 @@
 
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/opengoofy/hippo4j/develop?color=orange)
 
-## 简介
+## LettyLink
 
-![](https://images-machen.oss-cn-beijing.aliyuncs.com/image-20231115133642504.png)
-
-短链接（Short Link）是指将一个原始的长 URL（Uniform Resource Locator）通过特定的算法或服务转化为一个更短、易于记忆的
-URL。短链接通常只包含几个字符，而原始的长 URL 可能会非常长。
-
-短链接的原理非常简单，通过一个原始链接生成个相对短的链接，然后通过访问短链接跳转到原始链接。
-
-如果更细节一些的话，那就是：
-
-1. **生成唯一标识符**：当用户输入或提交一个长 URL 时，短链接服务会生成一个唯一的标识符或者短码。
-2. **将标识符与长 URL 关联**：短链接服务将这个唯一标识符与用户提供的长 URL 关联起来，并将其保存在数据库或者其他持久化存储中。
-3. **创建短链接**：将生成的唯一标识符加上短链接服务的域名（例如：http://nurl.ink ）作为前缀，构成一个短链接。
-4. **重定向**：当用户访问该短链接时，短链接服务接收到请求后会根据唯一标识符查找关联的长 URL，然后将用户重定向到这个长 URL。
-5. **跟踪统计**：一些短链接服务还会提供访问统计和分析功能，记录访问量、来源、地理位置等信息。
-
-短链接经常出现在咱们日常生活中，大家总是能在某些活动节日里收到各种营销短信，里边就会出现短链接。帮助企业在营销活动中，识别用户行为、点击率等关键信息监控。
-
-![](https://images-machen.oss-cn-beijing.aliyuncs.com/IMG_9858-20231126.jpg)
-
-主要作用包括但不限于以下几个方面：
-
-- **提升用户体验**：用户更容易记忆和分享短链接，增强了用户的体验。
-- **节省空间**：短链接相对于长 URL 更短，可以节省字符空间，特别是在一些限制字符数的场合，如微博、短信等。
-- **美化**：短链接通常更美观、简洁，不会包含一大串字符。
-- **统计和分析**：可以追踪短链接的访问情况，了解用户的行为和喜好。
-
-
-
-# Letty survey
-
-![License](https://img.shields.io/github/license/Lyle-Lyle/letty-survey)
-![Stars](https://img.shields.io/github/stars/Lyle-Lyle/letty-survey)
-![Issues](https://img.shields.io/github/issues/Lyle-Lyle/letty-survey)
 
 ## Project Overview 📖
-This project is also a demonstration of the work I did during my internship. 他是公司营销平台下的短链接系统，服务于所有接入的用户，目的主要是为了增强用户体验。短链接（Short Link）是指将一个原始的长 URL（Uniform Resource Locator）通过特定的算法或服务转化为一个更短、易于记忆的
-URL。短链接通常只包含几个字符，而原始的长 URL 可能会非常长。
-
-短链接的原理非常简单，通过一个原始链接生成个相对短的链接，然后通过访问短链接跳转到原始链接。
 ![](https://images-machen.oss-cn-beijing.aliyuncs.com/image-20231115133642504.png)
 
-如果更细节一些的话，那就是：
+A short link is a URL (Uniform Resource Locator) that has been transformed from a long, original URL into a shorter, more memorable URL using a specific algorithm or service. Short links typically consist of only a few characters, whereas the original long URL can be very lengthy.
 
-1. **生成唯一标识符**：当用户输入或提交一个长 URL 时，短链接服务会生成一个唯一的标识符或者短码。
-2. **将标识符与长 URL 关联**：短链接服务将这个唯一标识符与用户提供的长 URL 关联起来，并将其保存在数据库或者其他持久化存储中。
-3. **创建短链接**：将生成的唯一标识符加上短链接服务的域名（例如：http://nurl.ink ）作为前缀，构成一个短链接。
-4. **重定向**：当用户访问该短链接时，短链接服务接收到请求后会根据唯一标识符查找关联的长 URL，然后将用户重定向到这个长 URL。
-5. **跟踪统计**：一些短链接服务还会提供访问统计和分析功能，记录访问量、来源、地理位置等信息。
+The principle of short links is quite simple: a long URL is transformed into a shorter, more manageable URL, which then redirects to the original long URL. The process involves the following steps:
 
-短链接经常出现在咱们日常生活中，大家总是能在某些活动节日里收到各种营销短信，里边就会出现短链接。帮助企业在营销活动中，识别用户行为、点击率等关键信息监控。
-![](https://images-machen.oss-cn-beijing.aliyuncs.com/IMG_9858-20231126.jpg)
-主要作用包括但不限于以下几个方面：
+1. **Generate a Unique Identifier**: When a user inputs or submits a long URL, the short link service generates a unique identifier or short code.
+2. **Associate Identifier with Long URL**: The short link service associates this unique identifier with the provided long URL and stores this information in a database or other persistent storage.
+3. **Create the Short Link**: The generated unique identifier is combined with the short link service's domain name (e.g., http://nurl.ink) as a prefix to create the short link.
+4. **Redirect**: When a user accesses the short link, the short link service receives the request, looks up the associated long URL based on the unique identifier, and redirects the user to the long URL.
+5. **Tracking and Analytics**: Some short link services also provide tracking and analytics features, recording information such as the number of accesses, sources, geographic locations, and more.
 
-- **提升用户体验**：用户更容易记忆和分享短链接，增强了用户的体验。
-- **节省空间**：短链接相对于长 URL 更短，可以节省字符空间，特别是在一些限制字符数的场合，如微博、短信等。
-- **美化**：短链接通常更美观、简洁，不会包含一大串字符。
-- **统计和分析**：可以追踪短链接的访问情况，了解用户的行为和喜好。
+   
+Short links frequently appear in our daily lives. We often receive various marketing messages during promotional events and holidays, which include short links. These links help businesses monitor key information such as user behavior and click-through rates during marketing campaigns.
+
+
+![IMG_8524](https://github.com/user-attachments/assets/03f09256-2088-4795-acff-91965b120e5b)
+
+
+The main benefits of short links include, but are not limited to, the following aspects:
+
+- **Enhanced User Experience**: Short links are easier for users to remember and share, improving the overall user experience.
+- **Space Saving**: Short links are shorter than long URLs, saving character space, especially in character-limited contexts such as Twitter or SMS.
+- **Aesthetics**: Short links are generally more visually appealing and concise, avoiding long strings of characters.
+- **Tracking and Analytics**: Short links allow for tracking of access patterns, helping to understand user behavior and preferences.
+
+
 
 ## Features ✨
 
-- surveys management(Creat, edit, Update, delete), surveys list page, starred survey page, trash bin page
-- low-code editor, drag-and-drop components
-- statistics based on responses
-- basic user login and sign up feature
+- A Bloom filter is used to determine whether a short URL already exists, providing far better performance than using a distributed lock combined with a database query approach
+- To optimize the issue of querying the database under scenarios involving updates or expirations with a large number of requests, a caching mechanism for non-existent reads is implemented. Additionally, a distributed lock mutual exclusion strategy is used to reduce frequent database queries.
+- Utilize the ”peak shaving” feature of RocketMQ message queues to handle the storage of monitoring information under scenarios with high volumes of short URL access.
+- To ensure data consistency between the short URL cache and the database, a strategy of updating the database and then deleting the cache has been adopted. This guarantees data consistency between the two.
+- To implement data modification functionality for short-link in high-traﬀic scenarios, I used Redisson distributed read-write locks to ensure data modification safety and consistency.
+- Use Sentinel for QPS (queries per second) rate limiting on interface access to ensure the stable operation of the short-link system. When rate limiting rules are triggered, the system can perform degradation handling to ensure the availability of core functionalities.
 
 ## Demo Screenshots 📸
-All the data I used in the demostration is from simulation data generator Mock.js(https://github.com/nuysoft/Mock). I also included that program in this project, feel free to check.
-
-Home page
-<img width="1920" alt="image" src="https://github.com/user-attachments/assets/6ea703bf-6873-47e9-a2ad-8121e375883d">
-
-list of surveys
-<img width="1920" alt="image" src="https://github.com/user-attachments/assets/31722767-82e5-4755-adb6-f1cdf5678b19">
-
-create a survey
-<img width="1920" alt="image" src="https://github.com/user-attachments/assets/aed3f970-8544-427f-a0c3-d0bbb9507508">
-<img width="1920" alt="image" src="https://github.com/user-attachments/assets/71987d73-8857-4e6b-a7af-b4aeb63488d2">
-
-edit a survey
-<img width="1911" alt="image" src="https://github.com/user-attachments/assets/6fd7eec0-0c16-4bff-912d-77f0f5752b4a">
-
-statistics
-<img width="1898" alt="image" src="https://github.com/user-attachments/assets/85cf6a13-2461-4eae-a301-8c05eab8a71a">
-
-
-starred surveys
-<img width="1920" alt="image" src="https://github.com/user-attachments/assets/cae24d7a-475b-42c3-89d4-255a2e101bbf">
-
-
-
-Trash bin
-<img width="1920" alt="image" src="https://github.com/user-attachments/assets/cad1beba-3cb1-4281-ace9-0ff22c578c8e">
-
-
+TODO
 
 
 
