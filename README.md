@@ -1,9 +1,6 @@
 ## LettyLink
 
 ## Project Overview 📖
-
-![alt text](a3660bafb5fe56a64c2ed6742724693b.png)
-
 A short link is a URL (Uniform Resource Locator) that has been transformed from a long, original URL into a shorter, more memorable URL using a specific algorithm or service. Short links typically consist of only a few characters, whereas the original long URL can be very lengthy.
 
 The principle of short links is quite simple: a long URL is transformed into a shorter, more manageable URL, which then redirects to the original long URL. The process involves the following steps:
@@ -34,24 +31,24 @@ The main benefits of short links include, but are not limited to, the following 
 - To implement data modification functionality for short-link in high-traﬀic scenarios, I used Redisson distributed read-write locks to ensure data modification safety and consistency.
 - Use Sentinel for QPS (queries per second) rate limiting on interface access to ensure the stable operation of the short-link system. When rate limiting rules are triggered, the system can perform degradation handling to ensure the availability of core functionalities.
 
+
 ## UI 📸
 
 Home page
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/d1ec7ffc-ae76-4e9b-b50a-40ecd2cd04a5)
 
 Create shortLink
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/3e059acf-ecbc-4d66-94fe-e5e1adcc9878)
 
 Statistics
-![alt text](image-3.png)
+![image](https://github.com/user-attachments/assets/1ebef160-5379-4269-a493-cb8b02e016bf)
 
-![alt text](image-4.png)
+![image](https://github.com/user-attachments/assets/07734d19-e11b-43d6-be57-9d88adf7e0d1)
 
-![alt text](image-5.png)
+![image](https://github.com/user-attachments/assets/cc0d5976-4c27-425b-b166-a989c68a767c)
 
-![alt text](image-6.png)
-Sign in
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/08cec75d-eed1-4593-a2ed-8f86f117c7b3)
+
 
 ## TODO List
 
